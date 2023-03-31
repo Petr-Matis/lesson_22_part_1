@@ -19,9 +19,13 @@ class Cube:
     def get_z(self):
         return self.z
 
+    def get_cube_volume(self):
+        return self.get_x() * self.get_y() * self.get_z()
+
 
 class CubeVolumeCalculator:
 
     @staticmethod
     def calc_cube_volume(cube):
-        return cube.get_x() * cube.get_y() * cube.get_z()
+        return cube.get_cube_volume()
+
